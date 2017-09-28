@@ -1,0 +1,24 @@
+{
+  "name": "ntaker",
+  "version": "1.0.0",
+  "description": "App to take notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bentzkast/N-taker.git"
+  },
+  "author": "Joseph Alfredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bentzkast/N-taker/issues"
+  },
+  "homepage": "https://github.com/Bentzkast/N-taker#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.13"
+  }
+}
