@@ -21,7 +21,7 @@ Version `0.1.0` to resfresh server
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [Bentzkast](https://github.com/Bentzkast)
+* **Joseph Alfredo** - *Initial work* - [Bentzkast](https://github.com/Bentzkast)
 
 ## License
 
