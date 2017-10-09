@@ -1,9 +1,37 @@
+h1, h2, h3, h4, h5, h6, a, p, label {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #111111;
+}
+
 .logo {
   width: 140px;
   margin: auto;
 }
 
+.logo-title {
+    color: #c64c01;
+}
+
 .icon {
   width: 50px;
   margin: auto;
+}
+
+.front-page {
+  background-image: url(/img/front.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buffer {
+  height: 100px;
+}
+
+#back {
+  background-color: #35424a;
+}
+
+.card {
+  background-color: #cccccc;
 }
