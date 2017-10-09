@@ -1,19 +1,17 @@
 N-taker
 =======
-##Note taker web App
+### Note taker web App
 Basic of nodeJs, express and mongoDB.
 Implements basic full stack web app for
 practical backend development example
 
-##Feature
-* Basic register and login authentication
+## Feature
+* Simple note taking web app
+* RestAPI respond and request, GET, POST, PUT, DELETE
+* register and login server side w/ local strategy authentication
+* Notes protection from unauthorized user
 
 Version `0.1.2`
-
-```
-
-```
-
 
 ## Dependency
 * [Node](https://nodejs.org/en/) - The web framework used
@@ -22,7 +20,7 @@ Version `0.1.2`
 * [express-session](https://github.com/expressjs/session) - Simple middleware session for express
 * [method-override](https://github.com/expressjs/method-override) - PUT or DELETE in places where the client doesn't support it.
 * [connect-flash](https://github.com/jaredhanson/connect-flash) - Flash message middleware for Connect and Express.
-* [mongoose](http://mongoosejs.com/) - mongoDB object modeling for nodeJS
+* [mongoose](http://mongoosejs.com/) - elegant mongoDB object modeling for nodeJS (ORM)
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs) - crypto for password encryption
 * [passport](https://www.npmjs.com/package/passport) - login authentication
 

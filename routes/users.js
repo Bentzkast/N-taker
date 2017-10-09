@@ -9,7 +9,7 @@ require('../models/User');
 const User = mongoose.model('users');
 
 //-----------------------------------------------------------------
-
+// GET
 
 // Login Route
 router.get('/login', (req,res) => {
@@ -20,6 +20,25 @@ router.get('/login', (req,res) => {
 router.get('/register', (req,res) => {
   res.render('users/register');
 });
+
+// logout router
+router.get('/logout', (req, res) =>{
+  req.logout();
+  req.flash('success_msg', 'logged out :)');
+  res.redirect('/users/login');
+});
+
+
+//-----------------------------------------------------------------
+
+router.post('/login', (req, res, next) => {
+  passport.authenticate('local', {
+    successRedirect: '/notes',
+    failureRedirect: '/users/login',
+    failureFlash: true
+  })(req, res, next);
+});
+
 
 router.post('/register', (req,res)=>{
   // some basic input validation for password

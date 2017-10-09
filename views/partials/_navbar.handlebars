@@ -18,11 +18,15 @@
             class="nav-link dropdown-toggle" data-toggle="dropdown">Action
           </a>
           <div class="dropdown-menu">
+            {{#if user}}
             <a href="/notes" class="dropdown-item">List Notes</a>
             <a href="/notes/new" class="dropdown-item">New Notes</a>
             <div class="dropdown-divider"></div>
+            <a href="/users/logout" class="dropdown-item">Log Out</a>
+            {{else}}
             <a href="/users/login" class="dropdown-item">Login</a>
             <a href="/users/register" class="dropdown-item">Register</a>
+            {{/if}}
           </div>
         </div>
       </div>

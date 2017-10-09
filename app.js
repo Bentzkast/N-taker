@@ -4,7 +4,7 @@ const exphbs  = require('express-handlebars');
 const methodOverride = require('method-override');
 const flash = require('connect-flash');
 const session = require('express-session');
-
+const passport = require('passport');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
@@ -14,6 +14,9 @@ const app = express();
 // Load Routes form other file
 const notes = require('./routes/notes');
 const users = require('./routes/users');
+
+// passort config
+require('./config/passport')(passport);
 
 //-----------------------------------------------------------------
 
@@ -50,6 +53,10 @@ app.use(session({
   saveUninitialized: true
 }));
 
+// passport middleware need to be after session
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use(flash());
 
 //Global variable
@@ -57,6 +64,8 @@ app.use(function(req, res, next){
   res.locals.success_msg = req.flash('success_msg');
   res.locals.error_msg = req.flash('error_msg');
   res.locals.error = req.flash('error');
+  res.locals.user = req.user || null;
+
   // call next piece of middleware( asynchronous)
   next();
 });
