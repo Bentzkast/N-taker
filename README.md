@@ -11,7 +11,8 @@ practical backend development example
 * register and login server side w/ local strategy authentication
 * Notes protection from unauthorized user
 
-Version `0.1.2`
+Version `0.1.5`
+Deployed at `polar-lake-76141.herokuapp.com`
 
 ## Dependency
 * [Node](https://nodejs.org/en/) - The web framework used
