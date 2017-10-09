@@ -1,20 +1,21 @@
+
 <div class="row">
   <div class="col-md-6 mx-auto">
     <div class="card card-body">
       <h3>Register</h3>
-      <img class="logo" src="/img/notebook.jpeg" alt="logo">
+      <img class="logo" src="/img/id-card.png" alt="logo">
       <form action="/users/register" method="post">
         <div class="form-group">
           <label for="email">Name</label>
-          <input name="name" type="text" class="form-control" required>
+          <input name="name" type="text" class="form-control" required value="{{name}}">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input name="email" type="email" class="form-control" required>
+          <input name="email" type="email" class="form-control" required value="{{email}}">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input name="password" type="password" class="form-control" required>
+          <input name="password" type="password" class="form-control" required value="{{password}}">
         </div>
         <div class="form-group">
           <label for="password2">Confirm Password</label>

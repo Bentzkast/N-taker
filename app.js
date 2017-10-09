@@ -11,10 +11,11 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// Load Routes
+// Load Routes form other file
 const notes = require('./routes/notes');
 const users = require('./routes/users');
 
+//-----------------------------------------------------------------
 
 
 // connect to
@@ -25,16 +26,6 @@ mongoose.connect('mongodb://localhost/n-taker-dev',{
 })
 .then(()=> console.log('Mongodb connected ...'))
 .catch(err => console.log(err));
-
-
-
-/* How middleware works
-app.use(function (res, req, next) {
-  //console.log(Date.now());
-  req.name = 'Joseph Alfredo';
-  next();
-});
-*/
 
 // by default use view directory
 // Handlebars middleware
@@ -85,12 +76,12 @@ app.get('/about',(req,res)=>{
 });
 
 
-// Use Route
+// Use Route assigned before
 app.use('/notes',notes);
 app.use('/users',users);
 
 
-
+// use specified port
 const port = 5000;
 
 app.listen(port, () => {

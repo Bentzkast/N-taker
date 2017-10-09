@@ -8,7 +8,7 @@ require('../models/Note');
 const Note = mongoose.model('notes');
 //-------------------------------------------------
 
-// notes
+// notes some basicREST api
 router.get('/',(req, res)=>{
   Note.find({})
   .sort({date:'desc'})
@@ -45,9 +45,9 @@ router.post('/', (req,res)=>{
   }
 
   if(errors.length > 0){
-    res.render('/notes/new', {
+    res.render('notes/new', {
       errors: errors,
-      title: req.body.title,
+      title: req.body.title, // passed back in, so no retyping
       detail: req.body.detail
     });
   }else {
