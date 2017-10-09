@@ -1,15 +1,22 @@
 N-taker
 =======
-### Note taker web App
-Basic of nodeJs, express and mongoDB.
-Implements basic full stack web app for
-practical backend development example
+### Note taker
+Is a basic full stack web application with nodeJs, express, and mongoDB
+The Purpose of this project is for myself, learn the basic practical workflow of a MCV pattern web application, restAPI, database, basic server side authentication, basically everything that are good to know for a full web software deployment. It is currently still under development.
 
 ## Feature
+#### Available
 * Simple note taking web app
 * RestAPI respond and request, GET, POST, PUT, DELETE
-* register and login server side w/ local strategy authentication
+* Register and login server side w/ local strategy authentication
 * Notes protection from unauthorized user
+* Basic UI with bootstrap css and handlebars template
+
+#### Future
+* More elaborate UI
+* Forgot Password button
+* Delete note confirmation
+* Personalization of the notes
 
 Version `0.1.5`
 Deployed at `polar-lake-76141.herokuapp.com`
