@@ -1,7 +1,7 @@
 N-taker
 =======
 ### Note taker
-Is a basic full stack web application with nodeJs, express, and mongoDB
+Is a server side web application with nodeJs, express, and mongoDB
 The Purpose of this project is, for myself, to learn the basic practical workflow of a MCV pattern web application, restAPI, database, basic server side authentication, basically everything that are good to know for a full web software deployment. It is currently still under development.
 
 ## Feature
